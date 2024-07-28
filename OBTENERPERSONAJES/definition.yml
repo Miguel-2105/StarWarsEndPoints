@@ -1,0 +1,13 @@
+get-sw-people:
+  handler: OBTENERPERSONAJES/src/controllers/PersonajeController.ObtenerPersonaje
+  events:
+    - httpApi:
+        path: /people
+        method: get
+
+get-sw-people-dydb:
+  handler: OBTENERPERSONAJES/src/controllers/PersonajeController.ObtenerPersonajesDyDB
+  events:
+    - httpApi:
+        path: /peopleDydb
+        method: get
